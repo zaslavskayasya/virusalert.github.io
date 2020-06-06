@@ -10,15 +10,15 @@ html
                 nav.nav
                     ul.ul(id="menu")
                         li.li
-                            a(href="#") О вирусе
+                            a(href="#about") О вирусе
                         li.li
-                            a(href="#") Способы передачи
+                            a(href="#info") Способы передачи
                         li.li
-                            a(href="#") Симптомы
+                            a(href="#sympth") Симптомы
                         li.li
-                            a(href="#") Статистика  
+                            a(href="#stat") Статистика  
                     a(href="#" class="menu_mobile" id="menu_show") menu
-            section.main_section
+            section.main_section#about
                 div.text_part
                     h3 COVID-19 Alert
                     h1 Оставайся на карантине и не паникуй
@@ -41,7 +41,7 @@ html
                         img(src="img/virus.svg", alt="")
                     div.virus1.virus3
                         img(src="img/virus.svg", alt="")
-            section.corona_info
+            section.corona_info#info
                 div.wrap_info
                     div.left_pic
                         div.wrap_viruses
@@ -79,7 +79,7 @@ html
                             img(src="img/pic3.svg", alt="")
                         p.plate_header Объекты
                         p.plate_text Вирус может оставаться некоторое время на обьектах, которые трогал зараженный человек.
-            section.sympthoms
+            section.sympthoms#sympth
                 h3 COVID-19
                 h2 Симптомы
                 p.simple_text
@@ -241,28 +241,28 @@ html
                                 .paragraph_inner
                                     |  Держитесь на расстоянии не менее одного метра от кашляющих или чихающих людей. Это необходимо для того, чтобы не вдохнуть капли, выделяемые из носа или рта другого человека, который может быть заражен вирусом COVID-19.  
 
-        section.contagion
-            h3 COVID-19
-            h2 Миниторинг ситуации
-        #viz1591457176004.tableauPlaceholder(style='position: relative')
-          noscript
-            a(href='#')
-              img(alt=' ' src='https://public.tableau.com/static/images/mo/monitor_15841091301660/sheet0/1_rss.png' style='border: none')
-          object.tableauViz(style='display:none;')
-            param(name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F')
-            param(name='embed_code_version' value='3')
-            param(name='site_root' value='')
-            param(name='name' value='monitor_15841091301660/sheet0')
-            param(name='tabs' value='no')
-            param(name='toolbar' value='yes')
-            param(name='static_image' value='https://public.tableau.com/static/images/mo/monitor_15841091301660/sheet0/1.png')
-            param(name='animate_transition' value='yes')
-            param(name='display_static_image' value='yes')
-            param(name='display_spinner' value='yes')
-            param(name='display_overlay' value='yes')
-            param(name='display_count' value='yes')
-        .footer
-            p 2020 @ All rights reserved by pixelspark.co
+            section.contagion#stat
+                h3 COVID-19
+                h2 Миниторинг ситуации
+            #viz1591457176004.tableauPlaceholder(style='position: relative')
+              noscript
+                a(href='#')
+                  img(alt=' ' src='https://public.tableau.com/static/images/mo/monitor_15841091301660/sheet0/1_rss.png' style='border: none')
+              object.tableauViz(style='display:none;')
+                param(name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F')
+                param(name='embed_code_version' value='3')
+                param(name='site_root' value='')
+                param(name='name' value='monitor_15841091301660/sheet0')
+                param(name='tabs' value='no')
+                param(name='toolbar' value='yes')
+                param(name='static_image' value='https://public.tableau.com/static/images/mo/monitor_15841091301660/sheet0/1.png')
+                param(name='animate_transition' value='yes')
+                param(name='display_static_image' value='yes')
+                param(name='display_spinner' value='yes')
+                param(name='display_overlay' value='yes')
+                param(name='display_count' value='yes')
+            .footer
+                p 2020 @ All rights reserved by pixelspark.com
                 
 
         include includes/foot.pug

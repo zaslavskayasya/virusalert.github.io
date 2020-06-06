@@ -7,6 +7,22 @@ menuShow.addEventListener('click', function () {
   console.log('click')
   // body...
 })
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+console.log(anchors)
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 // var divElement = document.getElementById('viz1586989902560');
 // var vizElement = divElement.getElementsByTagName('object')[0]; 
 // if ( divElement.offsetWidth > 800 ) 
